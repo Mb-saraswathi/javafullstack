@@ -1,23 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Simple Login Page</title>
-</head>
-<body>
-    <h2>Login</h2>
-    <form action="login.html" method="post">
-        <label for="username">Mobile or Email:</label><br>
-        <input type="text" id="username" name="username" required><br><br>
-        
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-        
-        <button type="submit">Log in</button>
-    </form>
-    <p>
-        Don't have an account?
-        <a href="signup.html">Register here</a>
-    </p>
-</body>
+<html>
+    <head>
+        <title>Registeration Form</title>
+        <body>
+            <form>
+            <fieldset>
+            <h1 align="center" style="background-color: black; color: white;">Registeration Form</h1>
+            <fieldset>
+            <label>First Name<sup><span style="color:red";>*</span></sup>:</label>
+            <input type="text"  placeholder="Enter your name" name="fname" autofocus>
+            &nbsp;
+            <label>Last Name<sup><span style="color:red";>*</span></sup>:</label>
+            <input type="text" placeholder="Enter your last name" name="lname"  ><br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>surname Name<sup><span style="color:red";>*</span></sup>:</label>
+            <input type="text" placeholder="Surname name"><br><br>
+            <label>Gender<sup><span style="color:red";>*</span></sup></label><br>
+            <input type="radio" name="h">
+            <label>Female</label>
+            <input type="radio" name="h">
+            <label>Male</label>
+            <input type="radio" name="h">
+            <label>Others</label><br><br>
+            <label>Email id<sup><span style="color:red";>*</span></sup>:</label>
+            <input type="email" required>
+            <br>
+            <br>
+            <label>Date of Birth<sup><span style="color:red";>*</span></sup>: </label>
+            <input type="datetime-local">
+            <br><br>
+            <label>Mobile Number<sup><span style="color:red";>*</span></sup>:</label>
+            <input type="tel" placeholder="enter your number" name="bname">
+            <br><br>
+            <label>Address<sup><span style="color:red";>*</span></sup>:</label>
+            <br>
+            <textarea cols="50" rows="5" value="Address"></textarea>
+            <h4>Personal information:</h4>
+            <label>SSC PERCENTAGE<sup><span style="color:red";>*</span></sup>:   </label>
+            <input type="text" placeholder="91%"><br>
+            <br>
+            <label>INTER/DIPLOMA MARKS<sup><span style="color:red";>*</span></sup>:  </label>
+            <input type="text" placeholder="900/1000"><br><br>
+            <label>Btech/degree CGPA<sup><span style="color:red";>*</span></sup>:  </label>
+            <input type="text" placeholder="8.9 CGPA">
+            <br><br>
+            <label>Proffesion: </label>
+            <input type="text" placeholder="optional"><br><br>
+            <label>Experince: </label>
+             <select name="">
+                <option value="">1-2 yr</option>
+                <option value="">3-4 yr</option>
+                <option value="">5-6 yr</option>
+            </select>
+
+            <br><br>
+            <input type="checkbox" required>
+            <label>Terms & Conditions</label>
+            <br><br>
+            <input type="file">
+            <br><br>
+            <button style="background-color:black; width: auto; 
+                            color:beige;">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button style="background-color:black; width: auto; 
+                            color:beige;">Reset</button><br><br>
+            <button style="background-color:black; width: auto; 
+                            color:beige;">Register</button><br>
+               </fieldset>             
+           
+            </fieldset>
+            </form>
+        </body>
+    </head>
 </html>
