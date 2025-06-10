@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twilight Hotels - Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: url('https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg?width=1320&height=746&fit=crop&format=pjpg&auto=webp') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            background: rgba(255,255,255,0.92);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .nav-links {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            gap: 24px;
+        }
+        .nav-links.left {
+            justify-content: flex-start;
+        }
+        .hotel-name {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(90deg, #333 60%, #c59d5f 100%);
+            padding: 8px 32px;
+            border-radius: 12px;
+            letter-spacing: 2px;
+            margin: 0 30px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: background 0.2s, color 0.2s;
+        }
+        nav a:hover, nav a.active {
+            background: #c59d5f;
+            color: #fff;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 60px;
+        }
+        .features-list {
+            margin-top: 30px;
+            background: rgba(255,255,255,0.92);
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+            padding: 32px 24px;
+            max-width: 420px;
+            width: 100%;
+        }
+        .features-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .features-list li {
+            margin-bottom: 18px;
+            font-size: 1.08rem;
+            color: #333;
+            padding-left: 24px;
+            position: relative;
+        }
+        .features-list li:before {
+            content: "✓";
+            color: #c59d5f;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        @media (max-width: 700px) {
+            .navbar { flex-direction: column; gap: 12px; }
+            .hotel-name { margin: 10px 0; font-size: 1.3rem; padding: 6px 18px; }
+            .main-content { margin-top: 30px; }
+            .features-list { padding: 16px 8px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="nav-links left">
+                <a href="./homepage.html">Home</a>
+                <a href="./accommodation.html">Accommodation</a>
+            </nav>
+            <div class="hotel-name">TWILIGHT HOTELS</div>
+            <nav class="nav-links">
+                <a href="booking.html">Booking</a>
+                <a href="./features.html" class="active">Features</a>
+            </nav>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="features-list">
+            <h2 style="text-align:center; color:#333; margin-bottom:24px;">Hotel Features</h2>
+            <ul>
+                <li>Luxurious, spacious rooms & suites</li>
+                <li>24/7 room service</li>
+                <li>Complimentary high-speed Wi-Fi</li>
+                <li>Infinity pool & spa</li>
+                <li>Multi-cuisine restaurant & bar</li>
+                <li>Fitness center & yoga studio</li>
+                <li>Airport shuttle & travel desk</li>
+                <li>Conference & banquet facilities</li>
+                <li>Family-friendly amenities</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

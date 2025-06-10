@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twilight Hotels - Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: url('https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg?width=1320&height=746&fit=crop&format=pjpg&auto=webp') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            background: rgba(255,255,255,0.92);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .nav-links {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            gap: 24px;
+        }
+        .nav-links.left {
+            justify-content: flex-start;
+        }
+        .hotel-name {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(90deg, #333 60%, #c59d5f 100%);
+            padding: 8px 32px;
+            border-radius: 12px;
+            letter-spacing: 2px;
+            margin: 0 30px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: background 0.2s, color 0.2s;
+        }
+        nav a:hover, nav a.active {
+            background: #c59d5f;
+            color: #fff;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 60px;
+        }
+        .booking-form {
+            margin-top: 30px;
+            padding: 24px 28px;
+            background: rgba(255,255,255,0.92);
+            border-radius: 12px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        }
+        .booking-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            font-weight: 500;
+        }
+        .booking-form input,
+        .booking-form select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            margin-bottom: 16px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+        .booking-form button {
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .booking-form button:hover {
+            background: #c59d5f;
+        }
+        @media (max-width: 700px) {
+            .navbar { flex-direction: column; gap: 12px; }
+            .hotel-name { margin: 10px 0; font-size: 1.3rem; padding: 6px 18px; }
+            .main-content { margin-top: 30px; }
+            .booking-form { padding: 16px 8px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="nav-links left">
+                <a href="./homepage.html">Home</a>
+                <a href="./accomodation.html">Accommodation</a>
+            </nav>
+            <div class="hotel-name">TWILIGHT HOTELS</div>
+            <nav class="nav-links">
+                <a href="./booking.html" class="active">Booking</a>
+            </nav>
+        </div>
+    </header>
+    <div class="main-content">
+        <form class="booking-form">
+            <label for="checkin">Check-in Date</label>
+            <input type="date" id="checkin" name="checkin" required>
+            <label for="checkout">Check-out Date</label>
+            <input type="date" id="checkout" name="checkout" required>
+            <label for="guests">Guests</label>
+            <select id="guests" name="guests">
+                <option>1 guest</option>
+                <option>2 guests</option>
+                <option>Family</option>
+            </select>
+            <button type="submit">Check Availability</button>
+        </form>
+    </div>
+</body>
+</html>
