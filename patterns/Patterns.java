@@ -158,7 +158,7 @@ System.out.println();
 }
 }
 Output:
-     2
+    2
    2 4
   2 4 6
  2 4 6 8
@@ -222,7 +222,7 @@ INDIA*/
     }
 }
 Output:
-     *
+    *
    ***
   *****
  *******
@@ -252,13 +252,13 @@ for (int i = 1; i <= n; i++) {
     }
 }
 Output:
-       *
+      *
     * * *
   * * * * *
 * * * * * * *
   * * * * *
     * * *
-       *     */
+      *     */
 
 /* class Patterns {
     public static void main(String[] args) {
@@ -313,9 +313,9 @@ System.out.println();
 }
 Output:
 * * * * *
-*          *
-*          *
-*          *
+*       *
+*       *
+*       *
 * * * * *   */
 
 /*class Patterns{
@@ -335,13 +335,13 @@ System.out.println();
 }
 }
 Output:
-      *
-      *
-      *
+   *
+   *
+   *
 *******
-      *
-      *
-      * */
+   *
+   *
+   * */
 
 /* class Patterns
 {
@@ -388,11 +388,11 @@ System.out.println();
 }
 Output:
 * * * * * * *
-*      *         *
-*      *         *
+*     *     *
+*     *     *
 * * * * * * *
-*     *         *
-*     *         *
+*     *     *
+*     *     *
 * * * * * * * */
 
 /*class Patterns {
@@ -412,10 +412,10 @@ System.out.println();
 }
 Output:
 *******
-*       *
 *     *
 *    *
 *   *
+*  *
 * *
 *         */
 
