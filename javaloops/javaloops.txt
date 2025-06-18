@@ -1,208 +1,195 @@
 question-1
-
-public class PrintBrightITCareer
- {
-    public static void main(String[] args)
- {
-        for(int i = 0; i < 10; i++) 
+class PrintBrightITCareer
 {
-            System.out.println("Bright IT Career");
-        }
-    }
+ 
+public static void main(String[] args)
+{
+ for(int i = 0; i < 10; i++) 
+{
+System.out.println("Bright IT Career");
+}
+}
 }
 ------------------------
 question-2
-
-
-public class PrintNumbers
+class PrintNumbers
 {
-    public static void main(String[] args)
-    {
-        int number = 1;
-        while (number <= 20)
-        {
-            System.out.println(number);
-            number++;
-        }
-    }
+public static void main(String[] args)
+{
+int number = 1;
+while (number <= 20)
+{
+System.out.println(number);
+number++;
+}
+}
 }
 
 ------------------------
 question-3
-
-
-public class NotEqualOperator
+class NotEqualOperator
 {
-    public static void main(String[] args)
-    {
-        int a = 5;
-        int b = 10;
-        if (a != b) 
-        {
-            System.out.println("a is not equal to b");
-        }
-    }
+public static void main(String[] args)
+{
+int a = 5;
+int b = 10;
+if (a != b) 
+{
+System.out.println("a is not equal to b");
 }
 
-
-public class EqualOperator
+}
+class EqualOperator
 {
-    public static void main(String[] args)
-    {
-        int a = 5;
-        int b = 5;
-        if (a == b) 
-        {
-            System.out.println("a is equal to b");
-        }
-    }
+public static void main(String[] args)
+{
+int a = 5;
+int b = 5;
+if (a == b) 
+{
+System.out.println("a is equal to b");
+}
+}
 }
 --------------------------------
 question-4
-
-4.
-
-public class OddEvenNumbers 
+class OddEvenNumbers 
 {
-    public static void main(String[] args)
+public static void main(String[] args)
  {
-        int limit = 20; 
-        System.out.println("Even numbers:");
-        for (int i = 1; i <= limit; i++)
+int limit = 20; 
+System.out.println("Even numbers:");
+for (int i = 1; i <= limit; i++)
  {
-            if (i % 2 == 0) {
-                System.out.println(i);
-            }
-        }
+if (i % 2 == 0) {
+System.out.println(i);
+}
+}
 
-        System.out.println("\nOdd numbers:");
-        for (int i = 1; i <= limit; i++) 
+System.out.println("\nOdd numbers:");
+for (int i = 1; i <= limit; i++) 
 {
-            if (i % 2 != 0)
+if (i % 2 != 0)
  {
-                System.out.println(i);
-            }
-        }
-    }
+System.out.println(i);
+}
+
+}
+
+}
 }
 
 ------------------------------------
 question-5.
-
-public class LargestNumber 
+class LargestNumber 
 {
-    public static void main(String[] args)
+public static void main(String[] args)
  {
-        int a = 10, b = 20, c = 15;
-        int largest;
-
-        if (a >= b && a >= c) 
+int a = 10, b = 20, c = 15;
+int largest;
+if (a >= b && a >= c) 
 {
-            largest = a;
-        } else if (b >= a && b >= c) 
+largest = a;
+} else if (b >= a && b >= c) 
 {
-            largest = b;
-        } 
-           else
+largest = b;
+} 
+else
  {
-            largest = c;
-        }
-
-        System.out.println("Largest number is: " + largest);
-    }
+largest = c;
+}
+System.out.println("Largest number is: " + largest);
+}
 }
 -------------------------------------
 question-6
-
-public class EvenNumbersWhile
+class EvenNumbersWhile
  {
-    public static void main(String[] args) 
+public static void main(String[] args) 
 {
-        int number = 10; 
-        System.out.println("Even numbers between 10 and 100:");
-        while (number <= 100)
+int number = 10; 
+System.out.println("Even numbers between 10 and 100:");
+while (number <= 100)
  {
-            if (number % 2 == 0) 
+if (number % 2 == 0) 
 {
-                System.out.println(number);
-            }
-            number++;
-        }
-    }
+System.out.println(number);
+}
+number++;
+}
+}
 }
 -----------------------------------
 question-7
-class PrintNumbersDoWhile
+ class PrintNumbersDoWhile
  {
-    public static void main(String[] args)
+  public static void main(String[] args)
  {
-        int number = 1;
-        do {
-            System.out.println(number);
-            number++;
-        } while (number <= 10);
-    }
+int number = 1;
+do {
+System.out.println(number);
+number++;
+
+} while (number <= 10);
+}
 }
 --------------------------
 question-8
 
 import java.util.Scanner;
 class ArmstrongEasy
- {
-    public static void main(String[] args) 
 {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a 3-digit number: ");
-        int num = sc.nextInt();
-        int temp = num;
-        int sum = 0;
-
-        while (temp > 0)
+public static void main(String[] args) 
+{
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter a 3-digit number: ");
+int num = sc.nextInt();
+int temp = num;
+int sum = 0;
+while (temp > 0)
  {
-            int digit = temp % 10;
-            sum = sum + (digit * digit * digit);
-            temp = temp / 10;
-        }
-
-        if (sum == num)
-            System.out.println(num + " is an Armstrong number.");
-        else
-            System.out.println(num + " is not an Armstrong number.");
-    }
+int digit = temp % 10;
+sum = sum + (digit * digit * digit);
+temp = temp / 10;
+}
+if (sum == num)
+System.out.println(num + " is an Armstrong number.");
+else
+System.out.println(num + " is not an Armstrong number.");
+}
 }
 --------------------
 question-9
 
 import java.util.Scanner;
 class PrimeOrNot {
-    public static void main(String[] args) 
+public static void main(String[] args) 
 {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int num = sc.nextInt();
-        boolean isPrime = true;
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter a number: ");
+int num = sc.nextInt();
+boolean isPrime = true;
+if (num <= 1) 
+{
+isPrime = false;
+}
+else 
+{
+for (int i = 2; i <= num / 2; i++) 
+{
+if (num % i == 0) 
+{
+isPrime = false;
+break;
+}
+}
+}
 
-        if (num <= 1) 
-{
-            isPrime = false;
-        }
-       else 
-{
-            for (int i = 2; i <= num / 2; i++) 
-{
-                if (num % i == 0) 
-{
-                    isPrime = false;
-                    break;
-                }
-            }
-        }
-
-        if (isPrime)
-            System.out.println(num + " is a prime number.");
-        else
-            System.out.println(num + " is not a prime number.");
-    }
+if (isPrime)
+System.out.println(num + " is a prime number.");
+else
+System.out.println(num + " is not a prime number.");
+}
 }
 ---------------------------------
 question-10
@@ -210,26 +197,26 @@ question-10
 import java.util.Scanner;
 class PalindromeCheck 
 {
-    public static void main(String[] args) 
+public static void main(String[] args) 
 {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int num = sc.nextInt();
-        int originalNum = num;
-        int reversedNum = 0;
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter a number: ");
+int num = sc.nextInt();
+int originalNum = num;
+int reversedNum = 0;
 
-        while (num != 0) 
+while (num != 0) 
 {
-            int digit = num % 10;
-            reversedNum = reversedNum * 10 + digit;
+int digit = num % 10;
+reversedNum = reversedNum * 10 + digit;
             num = num / 10;
-        }
+}
 
-        if (originalNum == reversedNum)
-            System.out.println(originalNum + " is a palindrome.");
-        else
-            System.out.println(originalNum + " is not a palindrome.");
-    }
+if (originalNum == reversedNum)
+System.out.println(originalNum + " is a palindrome.");
+else
+System.out.println(originalNum + " is not a palindrome.");
+}
 }
 
 -------------------
@@ -237,24 +224,24 @@ question-11
 
 import java.util.Scanner;
 class EvenOddWithSwitch
- {
-    public static void main(String[] args) 
 {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int num = sc.nextInt();
+public static void main(String[] args) 
+{
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter a number: ");
+int num = sc.nextInt();
 
-        switch (num % 2) 
+switch (num % 2) 
 {
-            case 0:
+case 0:
 System.out.println(num + " is even.");
-                break;
-            case 1:
-            case -1:            
+break;
+case 1:
+case -1:            
 System.out.println(num + " is odd.");
-                break;
-        }
-    }
+break;
+}
+}
 }
 -----------------------------------
 question-12.
@@ -262,46 +249,53 @@ question-12.
 import java.util.Scanner;
 class GenderCheck
  {
-    public static void main(String[] args) 
+public static void main(String[] args) 
 {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter gender (M/F): ");
-        char gender = sc.next().charAt(0);
-
-        switch (gender)
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter gender (M/F): ");
+char gender = sc.next().charAt(0);
+switch (gender)
  {
-            case 'M':
-            case 'm':
-                System.out.println("Gender: Male");
-                break;
-            case 'F':
-            case 'f':
-                System.out.println("Gender: Female");
-                break;
-            default:
-                System.out.println("Invalid input! Please enter M or F.");
-        }
-    }
+case 'M':
+case 'm':
+System.out.println("Gender: Male");
+
+break;
+
+case 'F':
+
+case 'f':
+
+System.out.println("Gender: Female");
+
+break;
+
+default:
+System.out.println("Invalid input! Please enter M or F.");
+}
+}
 }
 -----------------------
 qquestion-13
 
  class LargestNumberIfElse
  {
-    public static void main(String[] args)
+public static void main(String[] args)
  {
-        int a = 10, b = 20, c = 30;
-        int largest;
+int a = 10, b = 20, c = 30;
+int largest;
 
-        if (a >= b && a >= c) 
+if (a >= b && a >= c) 
 {
-            largest = a;
-        } else if (b >= a && b >= c) 
-{          largest = b;
-        } else {
-            largest = c;
-        }
-
-        System.out.println("Largest number is: " + largest);
-    }
+largest = a;
+} else if (b >= a && b >= c) 
+{largest = b;
+} else {
+largest = c;
 }
+System.out.println("Largest number is: " + largest);
+}
+}
+
+
+
