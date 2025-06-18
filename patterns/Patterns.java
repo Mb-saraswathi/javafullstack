@@ -21,6 +21,7 @@ Output:
 *******
 ******* */
 
+
 /*
 class Patterns
 {
@@ -42,6 +43,7 @@ Output:
 33333
 44444
 55555 */
+
 
 /*
 class Patterns
@@ -67,6 +69,7 @@ Output:
 
 /*
 
+
 class Patterns{
 public static void main(String[] args){
 int n=1;
@@ -86,6 +89,7 @@ Output:
 11 12 13 14 15
 16 17 18 19 20
 21 22 23 24 25*/
+
 
 /*
 class Patterns{
@@ -108,6 +112,7 @@ Output:
 31 33 35 37 39
 41 43 45 47 49*/
 
+
 /*class Patterns{
 public static void main(String []args){
 for(int i=0;i<5;i++){
@@ -124,6 +129,8 @@ Output:
 10101
 10101
 10101*/
+
+
 
 /*class Patterns{
 public static void main(String[]args){
@@ -144,6 +151,9 @@ Output:
   * * *
  * * * *
 * * * * * */ 
+
+
+
 /*class Patterns{
 public static void main(String[]args){
 for(int i=1;i<=5;i++){
@@ -163,6 +173,7 @@ Output:
   2 4 6
  2 4 6 8
 2 4 6 8 10*/
+
 
 /* class Patterns
 public static void main(String[]args){
@@ -194,6 +205,8 @@ Output:
 
 3 4 5 6 7*/
 
+
+
 /*class Patterns{
 public static void main(String[]args){
 String str="INDIA";
@@ -208,6 +221,8 @@ IN
 IND
 INDI
 INDIA*/
+
+
 
 /* class Patterns{
     public static void main(String[] args) {
@@ -227,6 +242,7 @@ Output:
   *****
  *******
 ********* */
+
 
 /*class Patterns {
     public static void main(String[] args) {
@@ -259,6 +275,8 @@ Output:
   * * * * *
     * * *
       *     */
+
+
 
 /* class Patterns {
     public static void main(String[] args) {
@@ -297,6 +315,7 @@ output:
    *
 */
 
+
 /* class Patterns {
 public static void main(String[] args) {
 int n = 5; 
@@ -317,6 +336,8 @@ Output:
 *       *
 *       *
 * * * * *   */
+
+
 
 /*class Patterns{
 public static void main(String[] args) {
@@ -342,6 +363,7 @@ Output:
    *
    *
    * */
+
 
 /* class Patterns
 {
@@ -371,6 +393,7 @@ Output:
 *     *
 */
 
+
 /* class Patterns {
 public static void main(String[] args) {
 int n = 7; 
@@ -394,6 +417,7 @@ Output:
 *     *     *
 *     *     *
 * * * * * * * */
+
 
 /*class Patterns {
  public static void main(String[] args) {
@@ -419,6 +443,7 @@ Output:
 * *
 *         */
 
+
 /*class Patterns{
 public static void main(String[] args) {
 int n = 5;
@@ -437,6 +462,7 @@ Output:
 ****4
 *****5
 */
+
 
 class Patterns {
  public static void main(String[] args) {
